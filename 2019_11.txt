@@ -1,0 +1,142 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/11/30
+
+
+BUGFIX
+
+
+	OrangeCat
+		Hover2Tooltip : when tip is too large
+			OLD : all is hidden
+			NEW : partially visible
+
+
+NEW_FEATURE
+
+
+	win32/win_combobox.c
+		silent mode
+			NEW : no fade-out
+			[!] : for a main window is closed
+	win32/win_inputpopup.c
+		silent mode
+			NEW : no fade-out
+			[!] : for a main window is closed
+	win32/win_simplemenu.c
+		silent mode
+			NEW : no fade-out
+			[!] : for a main window is closed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/11/20
+
+
+BUGFIX
+
+
+	com/IShellLink.c
+		n_IShellLink_lnk2path() : when a folder
+			OLD : do
+			NEW : do not
+
+	win32/win/icon.c
+		n_win_icon_name_resolve() : when a folder
+			OLD : do
+			NEW : do not
+	win32/win_scrollbar.c
+		arrow buttons : hovered : thumb color
+			OLD : nothing happens
+			NEW : change like a shaft is hovered
+	win32/win_simplemenu.c
+		Key Bindings : Enter : fade-out
+			OLD : misbehave in some cases
+			NEW : fixed
+
+	nmixer
+		Key Bindings : Enter : fade-out
+			OLD : misbehave
+			NEW : fixed
+	Nonnon Apps
+		White Noise : commandline option
+			OLD : typo
+			NEW : fixed
+			[!] : re-register is needed
+		Calendar : Key Bindings : Enter : fade-out
+			OLD : misbehave
+			NEW : fixed
+		White Noise : Key Bindings : Enter : fade-out
+			OLD : misbehave
+			NEW : fixed
+		Character Map : Key Bindings : Enter
+			OLD : not woriking
+			NEW : fixed
+	Nonnon Paint
+		Pen
+			OLD : jump to picked color in some combination
+			NEW : use old implementation
+			[!] : avarage color comparison causes
+			[x] : NEW_FEATURE @ 2019/09/10
+	OrangeCat
+		Item View : folders : when a folder has ".lnk"
+			OLD : misbehave
+			NEW : fixed
+		Hover2Tooltip : color : dark mode
+			OLD : not supported
+			NEW :     supported
+
+
+NEW_FEATURE
+
+
+	com/IShellLink.c
+		n_IShellLink_is_shortcut()
+			NEW : supported or not checker
+
+	win32/win_simplemenu.c
+		n_win_simplemenu_wndproc()
+			NEW : keep on displaying when return value is true
+
+	OrangeCat
+		shortcut files
+			NEW : hide ".lnk" from displayed names
+			[!] : you can control via INI file
+		Hover2Tooltip : shortcut files
+			NEW : target preview available
+		Menu : "View" and "Style"
+			OLD : close when selected
+			NEW : keep on displaying
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/11/10
+
+
+zzz...
+
+
+----------==========----------==========----------==========----------
+
